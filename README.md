@@ -1,1 +1,1 @@
-# Luxary_Rentals
+# Luxury_Rentals
