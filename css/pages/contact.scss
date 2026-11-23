@@ -328,7 +328,7 @@
 
         &::before {
             content: "";
-            background: url(/img/contact/plus.svg);
+            background: url(../../img/contact/plus.svg);
             flex: 0 0 1.5rem;
             aspect-ratio: 1;
             color: $dark;
@@ -336,7 +336,7 @@
 
         &.active::before {
             content: "";
-            background: url(/img/contact/minus.svg);
+            background: url(../../img/contact/minus.svg);
         }
     }
 
