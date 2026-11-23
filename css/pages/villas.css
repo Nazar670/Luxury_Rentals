@@ -1,0 +1,255 @@
+/* Hero */
+.hero {
+  position: relative;
+  padding-top: clamp(6.25rem, 9.27vw, 11.125rem);
+  padding-bottom: 4rem;
+  min-height: clamp(600px, 78.8vw, 94.625rem);
+  overflow: hidden;
+  background: linear-gradient(360deg, #fff 0%, rgba(255, 255, 255, 0) 64.5%), linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 53.73%);
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: url(../../img/hero-bg.jpg) center/cover no-repeat;
+  filter: blur(15.625rem);
+  transform: scale(1.05);
+}
+.hero__container {
+  max-width: 74.25rem;
+  padding-inline: 1.25rem;
+  margin: 0 auto;
+  text-align: center;
+}
+.hero__villas-items {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(19.5625rem, 100%), 1fr));
+  gap: clamp(1.25rem, 2.09vw, 2.5rem);
+  opacity: 0;
+}
+.hero__villas-items._watcher-view {
+  animation: show-items 1.3s ease forwards 0.5s;
+}
+@keyframes show-items {
+  0% {
+    translate: 0 30%;
+    opacity: 0;
+  }
+  100% {
+    translate: 0 0%;
+    opacity: 1;
+  }
+}
+.hero__villas-items:not(:last-child) {
+  margin-bottom: 2.5rem;
+}
+.hero__villas-load-more {
+  position: relative;
+  z-index: 2;
+  display: inline-block;
+  padding: 0.75rem 1.875rem;
+  border-radius: 10px;
+  background: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.5;
+  text-transform: uppercase;
+  color: #181d24;
+  transition: color 0.3s ease, background 0.3s ease;
+}
+@media (any-hover: hover) {
+  .hero__villas-load-more:hover {
+    background: #181d24;
+    color: #fff;
+  }
+}
+
+.slide-top-villas {
+  border-radius: 0.5rem 0.5rem 1.875rem 0.5rem;
+  background: #fff;
+  height: auto !important;
+}
+.slide-top-villas__gallery {
+  position: relative;
+  border-radius: 0.5rem 0.5rem 2.5rem 0.5rem;
+  box-shadow: 0 0.25rem 4rem 0 rgba(0, 0, 0, 0.05);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 54.21%, rgba(0, 0, 0, 0.4) 100%);
+}
+@media (any-hover: hover) {
+  .slide-top-villas__slide:hover img {
+    scale: 1.05;
+  }
+}
+.slide-top-villas__slide::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 59.69%, rgba(0, 0, 0, 0.4) 100%);
+  z-index: 2;
+}
+.slide-top-villas__slide img {
+  position: relative;
+  aspect-ratio: 432/356;
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: scale 0.3s ease;
+}
+.slide-top-villas__overlay {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.625rem;
+  position: absolute;
+  z-index: 2;
+  top: clamp(0.625rem, 1.31vw, 1.5625rem);
+  left: clamp(0.625rem, 1.46vw, 1.75rem);
+  right: clamp(0.625rem, 1.46vw, 1.75rem);
+}
+.slide-top-villas__badge {
+  border-radius: clamp(0.125rem, 0.209vw, 0.25rem) clamp(0.125rem, 0.209vw, 0.25rem) clamp(1rem, 1.05vw, 1.25rem) clamp(0.125rem, 0.209vw, 0.25rem);
+  border-bottom: clamp(0.1875rem, 0.209vw, 0.25rem) solid #918675;
+  padding: clamp(0.5rem, 0.625vw, 0.75rem);
+  background: #f5e9d6;
+}
+.slide-top-villas__slide-favorite {
+  cursor: pointer;
+  width: clamp(1rem, 1.25vw, 1.5rem);
+  aspect-ratio: 1;
+}
+@media (any-hover: hover) {
+  .slide-top-villas__slide-favorite:hover path {
+    fill: #fff;
+  }
+}
+.slide-top-villas__content {
+  padding-block: clamp(1rem, 1.05vw, 1.25rem);
+  padding-inline: clamp(1.25rem, 1.46vw, 1.75rem);
+}
+.slide-top-villas__categories {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+}
+.slide-top-villas__categories:not(:last-child) {
+  margin-bottom: 0.25rem;
+}
+.slide-top-villas__category {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: clamp(0.875rem, 0.79vw, 0.9375rem);
+  font-weight: 400;
+  line-height: 1.4;
+  color: #181d24;
+  transition: all 0.3s ease;
+}
+.slide-top-villas__category::after {
+  content: "";
+  flex: 0 0 0.25rem;
+  aspect-ratio: 1;
+  border-radius: 100%;
+  background: #5b656f;
+}
+.slide-top-villas__category:last-child::after {
+  display: none;
+}
+.slide-top-villas__category--active {
+  font-weight: 700;
+}
+@media (any-hover: hover) {
+  .slide-top-villas__category:hover {
+    font-weight: 700;
+  }
+}
+.slide-top-villas__title {
+  font-family: "Rufina", sans-serif;
+  font-size: clamp(1.75rem, 1.875vw, 2.25rem);
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.0625rem;
+  text-align: left;
+  color: #181d24;
+  transition: all 0.3s ease;
+}
+.slide-top-villas__title:not(:last-child) {
+  margin-bottom: clamp(0.75rem, 0.84vw, 1rem);
+}
+@media (any-hover: hover) {
+  .slide-top-villas__title:hover {
+    color: #918675;
+  }
+}
+.slide-top-villas__items {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: clamp(0.5rem, 0.8vw, 0.875rem);
+}
+.slide-top-villas__item {
+  flex: 0 1 calc((100% - clamp(0.5rem, 0.8vw, 0.875rem)) / 2);
+  display: flex;
+  align-items: center;
+  gap: clamp(0.5rem, 0.625vw, 0.75rem);
+}
+.slide-top-villas__item img {
+  flex: 0 0 clamp(1rem, 1.25vw, 1.5rem);
+}
+.slide-top-villas__item-info {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: clamp(0.875rem, 0.84vw, 1rem);
+  line-height: 1.5;
+  color: #181d24;
+}
+.slide-top-villas__item-info-value {
+  font-weight: 700;
+}
+.slide-top-villas__item-info-text {
+  font-weight: 500;
+}
+
+.badge-top-villas__title {
+  font-size: clamp(0.875rem, 0.9vw, 1rem);
+  font-weight: 500;
+  line-height: 1.5;
+  color: #181d24;
+}
+.badge-top-villas__title--bold {
+  font-weight: 700;
+}
+
+.swiper-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(0.25rem, 0.3125vw, 0.375rem);
+  bottom: clamp(1.6875rem, 2.09vw, 2.5rem) !important;
+}
+
+.swiper-pagination-bullet {
+  background: #f5f3f1 !important;
+  opacity: 1 !important;
+  margin: 0 !important;
+  width: clamp(0.375rem, 0.47vw, 0.5625rem) !important;
+  height: auto !important;
+  aspect-ratio: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background: #918675 !important;
+  opacity: 1 !important;
+}

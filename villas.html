@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/pages/villas.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+    <title>Luxury Rentals</title>
+</head>
+<body class="villas-page">
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container">
+                <div class="header__body">
+                    <a href="index.html" class="header__logo">Luxury Rentals</a>
+                    <div class="header__menu menu">
+                        <nav class="menu__body">
+                            <ul class="menu__list">
+                                <li class="menu__item">
+                                    <a href="villas.html" class="menu__link">Villas</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="about-us.html" class="menu__link">About us</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="contact.html" class="menu__link">Contact</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <button class="menu__icon icon-menu">
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <main class="main">
+            <section class="hero">
+                <div class="hero__container">
+                    <div class="hero__header">
+                        <h2 class="hero__tile hero-title-h2" data-watcher>All Villas</h2>
+                    </div>
+                
+                    <form class="hero__form form-hero" data-watcher>
+                        <div class="form-hero__selects">
+                            <div class="custom-select">
+                                <select name="location" id="location">
+                                    <option value="location">Location</option>
+                                    <option value="italy">Italy</option>
+                                    <option value="greece">Greece</option>
+                                </select>
+                            </div>
+
+                            <div class="custom-select">
+                                <select name="date" id="date">
+                                    <option value="selelect-dates">Select Dates</option>
+                                    <option value="10-november">10 November</option>
+                                </select>
+                            </div>
+
+                            <div class="custom-select">
+                                <select name="guests" id="guests">
+                                    <option value="guests">Guests</option>
+                                    <option value="1-guest">1 Guest</option>
+                                    <option value="2-guests">2 Guests</option>
+                                    <option value="3-guests">3 Guests</option>
+                                    <option value="4-guests">4 Guests</option>
+                                    <option value="5-guests">5 Guests</option>
+                                </select>
+                            </div>
+                            
+                            <div class="custom-select">
+                                <select name="price" id="price">
+                                    <option value="price">Price</option>
+                                    <option value="110">€110</option>
+                                    <option value="240">€240</option>
+                                    <option value="280">€280</option>
+                                    <option value="350">€350</option>
+                                </select>
+                            </div>
+                            
+                        </div>
+                        <button class="form-hero__search">
+                            Search
+                            <img src="./img/home/search-icon.svg" alt="search-icon">
+                        </button>
+                        
+                    </form>
+
+                    <div class="hero__villas-items" data-watcher>
+                        <div class="top-villas__slide slide-top-villas swiper-slide">
+                            <div class="slide-top-villas__gallery swiper">
+                                    <div class="swiper-wrapper">
+                                        <a href="#" class="slide-top-villas__slide swiper-slide">
+                                            <img src="./img/villas/villas-luna.jpg" alt="villas-luna">
+                                        </a>
+                                        <a href="#" class="slide-top-villas__slide swiper-slide">
+                                            <img src="./img/villas/villas-luna.jpg" alt="villas-luna">
+                                        </a>
+                                        <a href="#" class="slide-top-villas__slide swiper-slide">
+                                            <img src="./img/villas/villas-luna.jpg" alt="villas-luna">
+                                        </a>
+                                        <a href="#" class="slide-top-villas__slide swiper-slide">
+                                            <img src="./img/villas/villas-luna.jpg" alt="villas-luna">
+                                        </a>
+                                        <a href="#" class="slide-top-villas__slide swiper-slide">
+                                            <img src="./img/villas/villas-luna.jpg" alt="villas-luna">
+                                        </a>
+                                    </div>
+
+                                    <div class="slide-top-villas__overlay">
+                                        <div class="slide-top-villas__badge badge-top-villas">
+                                            <div class="badge-top-villas__title">From
+                                                <span class="badge-top-villas__title--bold">€350 / daily</span>
+                                            </div>
+                                        </div>
+                                        <svg class="slide-top-villas__slide-favorite" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <mask id="stroke0_655_4055" fill="white">
+                                            <path d="M10 18.35L8.55 17.03C3.4 12.36 0 9.28 0 5.5C0 2.42 2.42 0 5.5 0C7.24 0 8.91 0.81 10 2.09C11.09 0.81 12.76 0 14.5 0C17.58 0 20 2.42 20 5.5C20 9.28 16.6 12.36 11.45 17.04L10 18.35Z"/>
+                                            </mask>
+                                            <path d="M10 18.35L8.55 17.03C3.4 12.36 0 9.28 0 5.5C0 2.42 2.42 0 5.5 0C7.24 0 8.91 0.81 10 2.09C11.09 0.81 12.76 0 14.5 0C17.58 0 20 2.42 20 5.5C20 9.28 16.6 12.36 11.45 17.04L10 18.35Z" stroke-width="3.6" stroke="white" mask="url(#stroke0_655_4055)"/>
+                                        </svg>
+                                    </div>
+
+                                    <div class="swiper-pagination"></div>
+                            </div>
+                            <div class="slide-top-villas__content">
+                                <div class="slide-top-villas__categories">
+                                    <a href="#" class="slide-top-villas__category slide-top-villas__category--active">Greece</a>
+                                    <a href="#" class="slide-top-villas__category">Seaside</a>
+                                </div>
+                                <h5 class="slide-top-villas__title">
+                                    <a href="#">Villa Luna</a>
+                                </h5>
+                                <div class="slide-top-villas__items">
+                                    <div class="slide-top-villas__item">
+                                        <img src="./img/home/people.svg" alt="people-icon">
+                                        <div class="slide-top-villas__item-info">
+                                            <div class="slide-top-villas__item-info-value">11</div>
+                                            <div class="slide-top-villas__item-info-text">guests</div>
+                                        </div>
+                                    </div>
+                                    <div class="slide-top-villas__item">
+                                        <img src="./img/home/single-bed.svg" alt="single-bed-icon">
+                                        <div class="slide-top-villas__item-info">
+                                            <div class="slide-top-villas__item-info-value">6</div>
+                                            <div class="slide-top-villas__item-info-text">bedrooms</div>
+                                        </div>
+                                    </div>
+                                    <div class="slide-top-villas__item">
+                                        <img src="./img/home/blueprint.svg" alt="blueprint-icon">
+                                        <div class="slide-top-villas__item-info">
+                                            <div class="slide-top-villas__item-info-value">120</div>
+                                            <div class="slide-top-villas__item-info-text">m2</div>
+                                        </div>
+                                    </div>
+                                    <div class="slide-top-villas__item">
+                                        <img src="./img/home/bath-tub.svg" alt="bath-tub-icon">
+                                        <div class="slide-top-villas__item-info">
+                                            <div class="slide-top-villas__item-info-value">25</div>
+                                            <div class="slide-top-villas__item-info-text">bathrooms</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="top-villas__slide slide-top-villas swiper-slide">
+                            <div class="slide-top-villas__gallery swiper">
+                                    <div class="swiper-wrapper">
+                                        <a href="#" class="slide-top-villas__slide swiper-slide">
+                                            <img src="./img/villas/villas-tosca.jpg" alt="villas-tosca">
+                                        </a>
+                                        <a href="#" class="slide-top-villas__slide swiper-slide">
+                                            <img src="./img/villas/villas-tosca.jpg" alt="villas-tosca">
+                                        </a>
+                                        <a href="#" class="slide-top-villas__slide swiper-slide">
+                                            <img src="./img/villas/villas-tosca.jpg" alt="villas-tosca">
+                                        </a>
+                                        <a href="#" class="slide-top-villas__slide swiper-slide">
+                                            <img src="./img/villas/villas-tosca.jpg" alt="villas-tosca">
+                                        </a>
+                                        <a href="#" class="slide-top-villas__slide swiper-slide">
+                                            <img src="./img/villas/villas-tosca.jpg" alt="villas-tosca">
+                                        </a>
+                                    </div>
+
+                                    <div class="slide-top-villas__overlay">
+                                        <div class="slide-top-villas__badge badge-top-villas">
+                                            <div class="badge-top-villas__title">From
+                                                <span class="badge-top-villas__title--bold">€350 / daily</span>
+                                            </div>
+                                        </div>
+                                        <svg class="slide-top-villas__slide-favorite" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <mask id="stroke0_655_4055" fill="white">
+                                            <path d="M10 18.35L8.55 17.03C3.4 12.36 0 9.28 0 5.5C0 2.42 2.42 0 5.5 0C7.24 0 8.91 0.81 10 2.09C11.09 0.81 12.76 0 14.5 0C17.58 0 20 2.42 20 5.5C20 9.28 16.6 12.36 11.45 17.04L10 18.35Z"/>
+                                            </mask>
+                                            <path d="M10 18.35L8.55 17.03C3.4 12.36 0 9.28 0 5.5C0 2.42 2.42 0 5.5 0C7.24 0 8.91 0.81 10 2.09C11.09 0.81 12.76 0 14.5 0C17.58 0 20 2.42 20 5.5C20 9.28 16.6 12.36 11.45 17.04L10 18.35Z" stroke-width="3.6" stroke="white" mask="url(#stroke0_655_4055)"/>
+                                        </svg>
+                                    </div>
+
+                                    <div class="swiper-pagination"></div>
+                            </div>
+                            <div class="slide-top-villas__content">
+                                <div class="slide-top-villas__categories">
+                                    <a href="#" class="slide-top-villas__category slide-top-villas__category--active">Italy</a>
+                                    <a href="#" class="slide-top-villas__category">Mountains</a>
+                                </div>
+                                <h5 class="slide-top-villas__title">
+                                    <a href="#">Villa Toska</a>
+                                </h5>
+                                <div class="slide-top-villas__items">
+                                    <div class="slide-top-villas__item">
+                                        <img src="./img/home/people.svg" alt="people-icon">
+                                        <div class="slide-top-villas__item-info">
+                                            <div class="slide-top-villas__item-info-value">8</div>
+                                            <div class="slide-top-villas__item-info-text">guests</div>
+                                        </div>
+                                    </div>
+                                    <div class="slide-top-villas__item">
+                                        <img src="./img/home/single-bed.svg" alt="single-bed-icon">
+                                        <div class="slide-top-villas__item-info">
+                                            <div class="slide-top-villas__item-info-value">8</div>
+                                            <div class="slide-top-villas__item-info-text">bedrooms</div>
+                                        </div>
+                                    </div>
+                                    <div class="slide-top-villas__item">
+                                        <img src="./img/home/blueprint.svg" alt="blueprint-icon">
+                                        <div class="slide-top-villas__item-info">
+                                            <div class="slide-top-villas__item-info-value">460</div>
+                                            <div class="slide-top-villas__item-info-text">m2</div>
+                                        </div>
+                                    </div>
+                                    <div class="slide-top-villas__item">
+                                        <img src="./img/home/bath-tub.svg" alt="bath-tub-icon">
+                                        <div class="slide-top-villas__item-info">
+                                            <div class="slide-top-villas__item-info-value">4</div>
+                                            <div class="slide-top-villas__item-info-text">bathrooms</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="top-villas__slide slide-top-villas swiper-slide">
+                            <div class="slide-top-villas__gallery swiper">
+                                    <div class="swiper-wrapper">
+                                        <a href="#" class="slide-top-villas__slide swiper-slide">
+                                            <img src="./img/villas/villas-aphrodite-1.jpg" alt="villas-aphrodite-1">
+                                        </a>
+                                        <a href="#" class="slide-top-villas__slide swiper-slide">
+                                            <img src="./img/villas/villas-aphrodite-1.jpg" alt="villas-aphrodite-1">
+                                        </a>
+                                        <a href="#" class="slide-top-villas__slide swiper-slide">
+                                            <img src="./img/villas/villas-aphrodite-1.jpg" alt="villas-aphrodite-1">
+                                        </a>
+                                        <a href="#" class="slide-top-villas__slide swiper-slide">
+                                            <img src="./img/villas/villas-aphrodite-1.jpg" alt="villas-aphrodite-1">
+                                        </a>
+                                        <a href="#" class="slide-top-villas__slide swiper-slide">
+                                            <img src="./img/villas/villas-aphrodite-1.jpg" alt="villas-aphrodite-1">
+                                        </a>
+                                    </div>
+
+                                    <div class="slide-top-villas__overlay">
+                                        <div class="slide-top-villas__badge badge-top-villas">
+                                            <div class="badge-top-villas__title">From
+                                                <span class="badge-top-villas__title--bold">€350 / daily</span>
+                                            </div>
+                                        </div>
+                                        <svg class="slide-top-villas__slide-favorite" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <mask id="stroke0_655_4055" fill="white">
+                                            <path d="M10 18.35L8.55 17.03C3.4 12.36 0 9.28 0 5.5C0 2.42 2.42 0 5.5 0C7.24 0 8.91 0.81 10 2.09C11.09 0.81 12.76 0 14.5 0C17.58 0 20 2.42 20 5.5C20 9.28 16.6 12.36 11.45 17.04L10 18.35Z"/>
+                                            </mask>
+                                            <path d="M10 18.35L8.55 17.03C3.4 12.36 0 9.28 0 5.5C0 2.42 2.42 0 5.5 0C7.24 0 8.91 0.81 10 2.09C11.09 0.81 12.76 0 14.5 0C17.58 0 20 2.42 20 5.5C20 9.28 16.6 12.36 11.45 17.04L10 18.35Z" stroke-width="3.6" stroke="white" mask="url(#stroke0_655_4055)"/>
+                                        </svg>
+                                    </div>
+
+                                    <div class="swiper-pagination"></div>
+                            </div>
+                            <div class="slide-top-villas__content">
+                                <div class="slide-top-villas__categories">
+                                    <a href="#" class="slide-top-villas__category slide-top-villas__category--active">Greece</a>
+                                    <a href="#" class="slide-top-villas__category">Seaside</a>
+                                </div>
+                                <h5 class="slide-top-villas__title">
+                                    <a href="#">Aphrodite</a>
+                                </h5>
+                                <div class="slide-top-villas__items">
+                                    <div class="slide-top-villas__item">
+                                        <img src="./img/home/people.svg" alt="people-icon">
+                                        <div class="slide-top-villas__item-info">
+                                            <div class="slide-top-villas__item-info-value">12</div>
+                                            <div class="slide-top-villas__item-info-text">guests</div>
+                                        </div>
+                                    </div>
+                                    <div class="slide-top-villas__item">
+                                        <img src="./img/home/single-bed.svg" alt="single-bed-icon">
+                                        <div class="slide-top-villas__item-info">
+                                            <div class="slide-top-villas__item-info-value">6</div>
+                                            <div class="slide-top-villas__item-info-text">bedrooms</div>
+                                        </div>
+                                    </div>
+                                    <div class="slide-top-villas__item">
+                                        <img src="./img/home/blueprint.svg" alt="blueprint-icon">
+                                        <div class="slide-top-villas__item-info">
+                                            <div class="slide-top-villas__item-info-value">460</div>
+                                            <div class="slide-top-villas__item-info-text">m2</div>
+                                        </div>
+                                    </div>
+                                    <div class="slide-top-villas__item">
+                                        <img src="./img/home/bath-tub.svg" alt="bath-tub-icon">
+                                        <div class="slide-top-villas__item-info">
+                                            <div class="slide-top-villas__item-info-value">5</div>
+                                            <div class="slide-top-villas__item-info-text">bathrooms</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="top-villas__slide slide-top-villas swiper-slide">
+                            <div class="slide-top-villas__gallery swiper">
+                                    <div class="swiper-wrapper">
+                                        <a href="#" class="slide-top-villas__slide swiper-slide">
+                                            <img src="./img/villas/villas-makarska.jpg" alt="villas-makarska">
+                                        </a>
+                                        <a href="#" class="slide-top-villas__slide swiper-slide">
+                                            <img src="./img/villas/villas-makarska.jpg" alt="villas-makarska">
+                                        </a>
+                                        <a href="#" class="slide-top-villas__slide swiper-slide">
+                                            <img src="./img/villas/villas-makarska.jpg" alt="villas-makarska">
+                                        </a>
+                                        <a href="#" class="slide-top-villas__slide swiper-slide">
+                                            <img src="./img/villas/villas-makarska.jpg" alt="villas-makarska">
+                                        </a>
+                                        <a href="#" class="slide-top-villas__slide swiper-slide">
+                                            <img src="./img/villas/villas-makarska.jpg" alt="villas-makarska">
+                                        </a>
+                                    </div>
+
+                                    <div class="slide-top-villas__overlay">
+                                        <div class="slide-top-villas__badge badge-top-villas">
+                                            <div class="badge-top-villas__title">From
+                                                <span class="badge-top-villas__title--bold">€280 / daily</span>
+                                            </div>
+                                        </div>
+                                        <svg class="slide-top-villas__slide-favorite" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <mask id="stroke0_655_4055" fill="white">
+                                            <path d="M10 18.35L8.55 17.03C3.4 12.36 0 9.28 0 5.5C0 2.42 2.42 0 5.5 0C7.24 0 8.91 0.81 10 2.09C11.09 0.81 12.76 0 14.5 0C17.58 0 20 2.42 20 5.5C20 9.28 16.6 12.36 11.45 17.04L10 18.35Z"/>
+                                            </mask>
+                                            <path d="M10 18.35L8.55 17.03C3.4 12.36 0 9.28 0 5.5C0 2.42 2.42 0 5.5 0C7.24 0 8.91 0.81 10 2.09C11.09 0.81 12.76 0 14.5 0C17.58 0 20 2.42 20 5.5C20 9.28 16.6 12.36 11.45 17.04L10 18.35Z" stroke-width="3.6" stroke="white" mask="url(#stroke0_655_4055)"/>
+                                        </svg>
+                                    </div>
+
+                                    <div class="swiper-pagination"></div>
+                            </div>
+                            <div class="slide-top-villas__content">
+                                <div class="slide-top-villas__categories">
+                                    <a href="#" class="slide-top-villas__category slide-top-villas__category--active">Italy</a>
+                                    <a href="#" class="slide-top-villas__category">Mountains</a>
+                                </div>
+                                <h5 class="slide-top-villas__title">
+                                    <a href="#">Villa Makarska</a>
+                                </h5>
+                                <div class="slide-top-villas__items">
+                                    <div class="slide-top-villas__item">
+                                        <img src="./img/home/people.svg" alt="people-icon">
+                                        <div class="slide-top-villas__item-info">
+                                            <div class="slide-top-villas__item-info-value">8</div>
+                                            <div class="slide-top-villas__item-info-text">guests</div>
+                                        </div>
+                                    </div>
+                                    <div class="slide-top-villas__item">
+                                        <img src="./img/home/single-bed.svg" alt="single-bed-icon">
+                                        <div class="slide-top-villas__item-info">
+                                            <div class="slide-top-villas__item-info-value">8</div>
+                                            <div class="slide-top-villas__item-info-text">bedrooms</div>
+                                        </div>
+                                    </div>
+                                    <div class="slide-top-villas__item">
+                                        <img src="./img/home/blueprint.svg" alt="blueprint-icon">
+                                        <div class="slide-top-villas__item-info">
+                                            <div class="slide-top-villas__item-info-value">460</div>
+                                            <div class="slide-top-villas__item-info-text">m2</div>
+                                        </div>
+                                    </div>
+                                    <div class="slide-top-villas__item">
+                                        <img src="./img/home/bath-tub.svg" alt="bath-tub-icon">
+                                        <div class="slide-top-villas__item-info">
+                                            <div class="slide-top-villas__item-info-value">4</div>
+                                            <div class="slide-top-villas__item-info-text">bathrooms</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="top-villas__slide slide-top-villas swiper-slide">
+                            <div class="slide-top-villas__gallery swiper">
+                                    <div class="swiper-wrapper">
+                                        <a href="#" class="slide-top-villas__slide swiper-slide">
+                                            <img src="./img/villas/villas-roxane.jpg" alt="villas-roxane">
+                                        </a>
+                                        <a href="#" class="slide-top-villas__slide swiper-slide">
+                                            <img src="./img/villas/villas-roxane.jpg" alt="villas-roxane">
+                                        </a>
+                                        <a href="#" class="slide-top-villas__slide swiper-slide">
+                                            <img src="./img/villas/villas-roxane.jpg" alt="villas-roxane">
+                                        </a>
+                                        <a href="#" class="slide-top-villas__slide swiper-slide">
+                                            <img src="./img/villas/villas-roxane.jpg" alt="villas-roxane">
+                                        </a>
+                                        <a href="#" class="slide-top-villas__slide swiper-slide">
+                                            <img src="./img/villas/villas-roxane.jpg" alt="villas-roxane">
+                                        </a>
+                                    </div>
+
+                                    <div class="slide-top-villas__overlay">
+                                        <div class="slide-top-villas__badge badge-top-villas">
+                                            <div class="badge-top-villas__title">From
+                                                <span class="badge-top-villas__title--bold">€110 / daily</span>
+                                            </div>
+                                        </div>
+                                        <svg class="slide-top-villas__slide-favorite" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <mask id="stroke0_655_4055" fill="white">
+                                            <path d="M10 18.35L8.55 17.03C3.4 12.36 0 9.28 0 5.5C0 2.42 2.42 0 5.5 0C7.24 0 8.91 0.81 10 2.09C11.09 0.81 12.76 0 14.5 0C17.58 0 20 2.42 20 5.5C20 9.28 16.6 12.36 11.45 17.04L10 18.35Z"/>
+                                            </mask>
+                                            <path d="M10 18.35L8.55 17.03C3.4 12.36 0 9.28 0 5.5C0 2.42 2.42 0 5.5 0C7.24 0 8.91 0.81 10 2.09C11.09 0.81 12.76 0 14.5 0C17.58 0 20 2.42 20 5.5C20 9.28 16.6 12.36 11.45 17.04L10 18.35Z" stroke-width="3.6" stroke="white" mask="url(#stroke0_655_4055)"/>
+                                        </svg>
+                                    </div>
+
+                                    <div class="swiper-pagination"></div>
+                            </div>
+                            <div class="slide-top-villas__content">
+                                <div class="slide-top-villas__categories">
+                                    <a href="#" class="slide-top-villas__category slide-top-villas__category--active">Greece</a>
+                                    <a href="#" class="slide-top-villas__category">Seaside</a>
+                                </div>
+                                <h5 class="slide-top-villas__title">
+                                    <a href="#">Villa Roxane</a>
+                                </h5>
+                                <div class="slide-top-villas__items">
+                                    <div class="slide-top-villas__item">
+                                        <img src="./img/home/people.svg" alt="people-icon">
+                                        <div class="slide-top-villas__item-info">
+                                            <div class="slide-top-villas__item-info-value">11</div>
+                                            <div class="slide-top-villas__item-info-text">guests</div>
+                                        </div>
+                                    </div>
+                                    <div class="slide-top-villas__item">
+                                        <img src="./img/home/single-bed.svg" alt="single-bed-icon">
+                                        <div class="slide-top-villas__item-info">
+                                            <div class="slide-top-villas__item-info-value">6</div>
+                                            <div class="slide-top-villas__item-info-text">bedrooms</div>
+                                        </div>
+                                    </div>
+                                    <div class="slide-top-villas__item">
+                                        <img src="./img/home/blueprint.svg" alt="blueprint-icon">
+                                        <div class="slide-top-villas__item-info">
+                                            <div class="slide-top-villas__item-info-value">120</div>
+                                            <div class="slide-top-villas__item-info-text">m2</div>
+                                        </div>
+                                    </div>
+                                    <div class="slide-top-villas__item">
+                                        <img src="./img/home/bath-tub.svg" alt="bath-tub-icon">
+                                        <div class="slide-top-villas__item-info">
+                                            <div class="slide-top-villas__item-info-value">25</div>
+                                            <div class="slide-top-villas__item-info-text">bathrooms</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="top-villas__slide slide-top-villas swiper-slide">
+                            <div class="slide-top-villas__gallery swiper">
+                                    <div class="swiper-wrapper">
+                                        <a href="#" class="slide-top-villas__slide swiper-slide">
+                                            <img src="./img/villas/villas-aphrodite-2.jpg" alt="villas-aphrodite-2">
+                                        </a>
+                                        <a href="#" class="slide-top-villas__slide swiper-slide">
+                                            <img src="./img/villas/villas-aphrodite-2.jpg" alt="villas-aphrodite-2">
+                                        </a>
+                                        <a href="#" class="slide-top-villas__slide swiper-slide">
+                                            <img src="./img/villas/villas-aphrodite-2.jpg" alt="villas-aphrodite-2">
+                                        </a>
+                                        <a href="#" class="slide-top-villas__slide swiper-slide">
+                                            <img src="./img/villas/villas-aphrodite-2.jpg" alt="villas-aphrodite-2">
+                                        </a>
+                                        <a href="#" class="slide-top-villas__slide swiper-slide">
+                                            <img src="./img/villas/villas-aphrodite-2.jpg" alt="villas-aphrodite-2">
+                                        </a>
+                                    </div>
+
+                                    <div class="slide-top-villas__overlay">
+                                        <div class="slide-top-villas__badge badge-top-villas">
+                                            <div class="badge-top-villas__title">From
+                                                <span class="badge-top-villas__title--bold">€240 / daily</span>
+                                            </div>
+                                        </div>
+                                        <svg class="slide-top-villas__slide-favorite" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <mask id="stroke0_655_4055" fill="white">
+                                            <path d="M10 18.35L8.55 17.03C3.4 12.36 0 9.28 0 5.5C0 2.42 2.42 0 5.5 0C7.24 0 8.91 0.81 10 2.09C11.09 0.81 12.76 0 14.5 0C17.58 0 20 2.42 20 5.5C20 9.28 16.6 12.36 11.45 17.04L10 18.35Z"/>
+                                            </mask>
+                                            <path d="M10 18.35L8.55 17.03C3.4 12.36 0 9.28 0 5.5C0 2.42 2.42 0 5.5 0C7.24 0 8.91 0.81 10 2.09C11.09 0.81 12.76 0 14.5 0C17.58 0 20 2.42 20 5.5C20 9.28 16.6 12.36 11.45 17.04L10 18.35Z" stroke-width="3.6" stroke="white" mask="url(#stroke0_655_4055)"/>
+                                        </svg>
+                                    </div>
+
+                                    <div class="swiper-pagination"></div>
+                            </div>
+                            <div class="slide-top-villas__content">
+                                <div class="slide-top-villas__categories">
+                                    <a href="#" class="slide-top-villas__category slide-top-villas__category--active">Greece</a>
+                                    <a href="#" class="slide-top-villas__category">Seaside</a>
+                                </div>
+                                <h5 class="slide-top-villas__title">
+                                    <a href="#">Aphrodite</a>
+                                </h5>
+                                <div class="slide-top-villas__items">
+                                    <div class="slide-top-villas__item">
+                                        <img src="./img/home/people.svg" alt="people-icon">
+                                        <div class="slide-top-villas__item-info">
+                                            <div class="slide-top-villas__item-info-value">12</div>
+                                            <div class="slide-top-villas__item-info-text">guests</div>
+                                        </div>
+                                    </div>
+                                    <div class="slide-top-villas__item">
+                                        <img src="./img/home/single-bed.svg" alt="single-bed-icon">
+                                        <div class="slide-top-villas__item-info">
+                                            <div class="slide-top-villas__item-info-value">6</div>
+                                            <div class="slide-top-villas__item-info-text">bedrooms</div>
+                                        </div>
+                                    </div>
+                                    <div class="slide-top-villas__item">
+                                        <img src="./img/home/blueprint.svg" alt="blueprint-icon">
+                                        <div class="slide-top-villas__item-info">
+                                            <div class="slide-top-villas__item-info-value">460</div>
+                                            <div class="slide-top-villas__item-info-text">m2</div>
+                                        </div>
+                                    </div>
+                                    <div class="slide-top-villas__item">
+                                        <img src="./img/home/bath-tub.svg" alt="bath-tub-icon">
+                                        <div class="slide-top-villas__item-info">
+                                            <div class="slide-top-villas__item-info-value">5</div>
+                                            <div class="slide-top-villas__item-info-text">bathrooms</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="top-villas__slide slide-top-villas swiper-slide">
+                            <div class="slide-top-villas__gallery swiper">
+                                    <div class="swiper-wrapper">
+                                        <a href="#" class="slide-top-villas__slide swiper-slide">
+                                            <img src="./img/villas/villas-sunset.jpg" alt="villas-sunset">
+                                        </a>
+                                        <a href="#" class="slide-top-villas__slide swiper-slide">
+                                            <img src="./img/villas/villas-sunset.jpg" alt="villas-sunset">
+                                        </a>
+                                        <a href="#" class="slide-top-villas__slide swiper-slide">
+                                            <img src="./img/villas/villas-sunset.jpg" alt="villas-sunset">
+                                        </a>
+                                        <a href="#" class="slide-top-villas__slide swiper-slide">
+                                            <img src="./img/villas/villas-sunset.jpg" alt="villas-sunset">
+                                        </a>
+                                        <a href="#" class="slide-top-villas__slide swiper-slide">
+                                            <img src="./img/villas/villas-sunset.jpg" alt="villas-sunset">
+                                        </a>
+                                    </div>
+
+                                    <div class="slide-top-villas__overlay">
+                                        <div class="slide-top-villas__badge badge-top-villas">
+                                            <div class="badge-top-villas__title">From
+                                                <span class="badge-top-villas__title--bold">€280 / daily</span>
+                                            </div>
+                                        </div>
+                                        <svg class="slide-top-villas__slide-favorite" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <mask id="stroke0_655_4055" fill="white">
+                                            <path d="M10 18.35L8.55 17.03C3.4 12.36 0 9.28 0 5.5C0 2.42 2.42 0 5.5 0C7.24 0 8.91 0.81 10 2.09C11.09 0.81 12.76 0 14.5 0C17.58 0 20 2.42 20 5.5C20 9.28 16.6 12.36 11.45 17.04L10 18.35Z"/>
+                                            </mask>
+                                            <path d="M10 18.35L8.55 17.03C3.4 12.36 0 9.28 0 5.5C0 2.42 2.42 0 5.5 0C7.24 0 8.91 0.81 10 2.09C11.09 0.81 12.76 0 14.5 0C17.58 0 20 2.42 20 5.5C20 9.28 16.6 12.36 11.45 17.04L10 18.35Z" stroke-width="3.6" stroke="white" mask="url(#stroke0_655_4055)"/>
+                                        </svg>
+                                    </div>
+
+                                    <div class="swiper-pagination"></div>
+                            </div>
+                            <div class="slide-top-villas__content">
+                                <div class="slide-top-villas__categories">
+                                    <a href="#" class="slide-top-villas__category slide-top-villas__category--active">Italy</a>
+                                    <a href="#" class="slide-top-villas__category">Mountains</a>
+                                </div>
+                                <h5 class="slide-top-villas__title">
+                                    <a href="#">Villa Sunset</a>
+                                </h5>
+                                <div class="slide-top-villas__items">
+                                    <div class="slide-top-villas__item">
+                                        <img src="./img/home/people.svg" alt="people-icon">
+                                        <div class="slide-top-villas__item-info">
+                                            <div class="slide-top-villas__item-info-value">8</div>
+                                            <div class="slide-top-villas__item-info-text">guests</div>
+                                        </div>
+                                    </div>
+                                    <div class="slide-top-villas__item">
+                                        <img src="./img/home/single-bed.svg" alt="single-bed-icon">
+                                        <div class="slide-top-villas__item-info">
+                                            <div class="slide-top-villas__item-info-value">8</div>
+                                            <div class="slide-top-villas__item-info-text">bedrooms</div>
+                                        </div>
+                                    </div>
+                                    <div class="slide-top-villas__item">
+                                        <img src="./img/home/blueprint.svg" alt="blueprint-icon">
+                                        <div class="slide-top-villas__item-info">
+                                            <div class="slide-top-villas__item-info-value">460</div>
+                                            <div class="slide-top-villas__item-info-text">m2</div>
+                                        </div>
+                                    </div>
+                                    <div class="slide-top-villas__item">
+                                        <img src="./img/home/bath-tub.svg" alt="bath-tub-icon">
+                                        <div class="slide-top-villas__item-info">
+                                            <div class="slide-top-villas__item-info-value">4</div>
+                                            <div class="slide-top-villas__item-info-text">bathrooms</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="top-villas__slide slide-top-villas swiper-slide">
+                            <div class="slide-top-villas__gallery swiper">
+                                    <div class="swiper-wrapper">
+                                        <a href="#" class="slide-top-villas__slide swiper-slide">
+                                            <img src="./img/villas/villas-lady.jpg" alt="villas-white-lady">
+                                        </a>
+                                        <a href="#" class="slide-top-villas__slide swiper-slide">
+                                            <img src="./img/villas/villas-lady.jpg" alt="villas-white-lady">
+                                        </a>
+                                        <a href="#" class="slide-top-villas__slide swiper-slide">
+                                            <img src="./img/villas/villas-lady.jpg" alt="villas-white-lady">
+                                        </a>
+                                        <a href="#" class="slide-top-villas__slide swiper-slide">
+                                            <img src="./img/villas/villas-lady.jpg" alt="villas-white-lady">
+                                        </a>
+                                        <a href="#" class="slide-top-villas__slide swiper-slide">
+                                            <img src="./img/villas/villas-lady.jpg" alt="villas-white-lady">
+                                        </a>
+                                    </div>
+
+                                    <div class="slide-top-villas__overlay">
+                                        <div class="slide-top-villas__badge badge-top-villas">
+                                            <div class="badge-top-villas__title">From
+                                                <span class="badge-top-villas__title--bold">€110 / daily</span>
+                                            </div>
+                                        </div>
+                                        <svg class="slide-top-villas__slide-favorite" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <mask id="stroke0_655_4055" fill="white">
+                                            <path d="M10 18.35L8.55 17.03C3.4 12.36 0 9.28 0 5.5C0 2.42 2.42 0 5.5 0C7.24 0 8.91 0.81 10 2.09C11.09 0.81 12.76 0 14.5 0C17.58 0 20 2.42 20 5.5C20 9.28 16.6 12.36 11.45 17.04L10 18.35Z"/>
+                                            </mask>
+                                            <path d="M10 18.35L8.55 17.03C3.4 12.36 0 9.28 0 5.5C0 2.42 2.42 0 5.5 0C7.24 0 8.91 0.81 10 2.09C11.09 0.81 12.76 0 14.5 0C17.58 0 20 2.42 20 5.5C20 9.28 16.6 12.36 11.45 17.04L10 18.35Z" stroke-width="3.6" stroke="white" mask="url(#stroke0_655_4055)"/>
+                                        </svg>
+                                    </div>
+
+                                    <div class="swiper-pagination"></div>
+                            </div>
+                            <div class="slide-top-villas__content">
+                                <div class="slide-top-villas__categories">
+                                    <a href="#" class="slide-top-villas__category slide-top-villas__category--active">Greece</a>
+                                    <a href="#" class="slide-top-villas__category">Seaside</a>
+                                </div>
+                                <h5 class="slide-top-villas__title">
+                                    <a href="#">White Lady</a>
+                                </h5>
+                                <div class="slide-top-villas__items">
+                                    <div class="slide-top-villas__item">
+                                        <img src="./img/home/people.svg" alt="people-icon">
+                                        <div class="slide-top-villas__item-info">
+                                            <div class="slide-top-villas__item-info-value">11</div>
+                                            <div class="slide-top-villas__item-info-text">guests</div>
+                                        </div>
+                                    </div>
+                                    <div class="slide-top-villas__item">
+                                        <img src="./img/home/single-bed.svg" alt="single-bed-icon">
+                                        <div class="slide-top-villas__item-info">
+                                            <div class="slide-top-villas__item-info-value">6</div>
+                                            <div class="slide-top-villas__item-info-text">bedrooms</div>
+                                        </div>
+                                    </div>
+                                    <div class="slide-top-villas__item">
+                                        <img src="./img/home/blueprint.svg" alt="blueprint-icon">
+                                        <div class="slide-top-villas__item-info">
+                                            <div class="slide-top-villas__item-info-value">120</div>
+                                            <div class="slide-top-villas__item-info-text">m2</div>
+                                        </div>
+                                    </div>
+                                    <div class="slide-top-villas__item">
+                                        <img src="./img/home/bath-tub.svg" alt="bath-tub-icon">
+                                        <div class="slide-top-villas__item-info">
+                                            <div class="slide-top-villas__item-info-value">25</div>
+                                            <div class="slide-top-villas__item-info-text">bathrooms</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="top-villas__slide slide-top-villas swiper-slide">
+                            <div class="slide-top-villas__gallery swiper">
+                                    <div class="swiper-wrapper">
+                                        <a href="#" class="slide-top-villas__slide swiper-slide">
+                                            <img src="./img/villas/villas-thebes.jpg" alt="villas-thebes">
+                                        </a>
+                                        <a href="#" class="slide-top-villas__slide swiper-slide">
+                                            <img src="./img/villas/villas-thebes.jpg" alt="villas-thebes">
+                                        </a>
+                                        <a href="#" class="slide-top-villas__slide swiper-slide">
+                                            <img src="./img/villas/villas-thebes.jpg" alt="villas-thebes">
+                                        </a>
+                                        <a href="#" class="slide-top-villas__slide swiper-slide">
+                                            <img src="./img/villas/villas-thebes.jpg" alt="villas-thebes">
+                                        </a>
+                                        <a href="#" class="slide-top-villas__slide swiper-slide">
+                                            <img src="./img/villas/villas-thebes.jpg" alt="villas-thebes">
+                                        </a>
+                                    </div>
+
+                                    <div class="slide-top-villas__overlay">
+                                        <div class="slide-top-villas__badge badge-top-villas">
+                                            <div class="badge-top-villas__title">From
+                                                <span class="badge-top-villas__title--bold">€240 / daily</span>
+                                            </div>
+                                        </div>
+                                        <svg class="slide-top-villas__slide-favorite" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <mask id="stroke0_655_4055" fill="white">
+                                            <path d="M10 18.35L8.55 17.03C3.4 12.36 0 9.28 0 5.5C0 2.42 2.42 0 5.5 0C7.24 0 8.91 0.81 10 2.09C11.09 0.81 12.76 0 14.5 0C17.58 0 20 2.42 20 5.5C20 9.28 16.6 12.36 11.45 17.04L10 18.35Z"/>
+                                            </mask>
+                                            <path d="M10 18.35L8.55 17.03C3.4 12.36 0 9.28 0 5.5C0 2.42 2.42 0 5.5 0C7.24 0 8.91 0.81 10 2.09C11.09 0.81 12.76 0 14.5 0C17.58 0 20 2.42 20 5.5C20 9.28 16.6 12.36 11.45 17.04L10 18.35Z" stroke-width="3.6" stroke="white" mask="url(#stroke0_655_4055)"/>
+                                        </svg>
+                                    </div>
+
+                                    <div class="swiper-pagination"></div>
+                            </div>
+                            <div class="slide-top-villas__content">
+                                <div class="slide-top-villas__categories">
+                                    <a href="#" class="slide-top-villas__category slide-top-villas__category--active">Greece</a>
+                                    <a href="#" class="slide-top-villas__category">Seaside</a>
+                                </div>
+                                <h5 class="slide-top-villas__title">
+                                    <a href="#">Thebes</a>
+                                </h5>
+                                <div class="slide-top-villas__items">
+                                    <div class="slide-top-villas__item">
+                                        <img src="./img/home/people.svg" alt="people-icon">
+                                        <div class="slide-top-villas__item-info">
+                                            <div class="slide-top-villas__item-info-value">12</div>
+                                            <div class="slide-top-villas__item-info-text">guests</div>
+                                        </div>
+                                    </div>
+                                    <div class="slide-top-villas__item">
+                                        <img src="./img/home/single-bed.svg" alt="single-bed-icon">
+                                        <div class="slide-top-villas__item-info">
+                                            <div class="slide-top-villas__item-info-value">6</div>
+                                            <div class="slide-top-villas__item-info-text">bedrooms</div>
+                                        </div>
+                                    </div>
+                                    <div class="slide-top-villas__item">
+                                        <img src="./img/home/blueprint.svg" alt="blueprint-icon">
+                                        <div class="slide-top-villas__item-info">
+                                            <div class="slide-top-villas__item-info-value">460</div>
+                                            <div class="slide-top-villas__item-info-text">m2</div>
+                                        </div>
+                                    </div>
+                                    <div class="slide-top-villas__item">
+                                        <img src="./img/home/bath-tub.svg" alt="bath-tub-icon">
+                                        <div class="slide-top-villas__item-info">
+                                            <div class="slide-top-villas__item-info-value">5</div>
+                                            <div class="slide-top-villas__item-info-text">bathrooms</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="hero__villas-load-more">Load More</a>
+                </div>
+            </section>
+
+            <div class="text-banner">
+                <img src="./img/home/banner.jpg" alt="banner" class="text-banner__image">
+                <div class="text-banner__text" data-watcher>
+                    <p>Luxury takes many forms nowadays, but one thing doesn't change: luxury is about desire and the ability to create dreams.</p>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="footer__body" data-watcher>
+                    <div class="footer__info info-footer">
+                        <h3 class="info-footer__title">Let’s connect</h3>
+                        <div class="info-footer__items">
+                            <div class="info-footer__item">
+                                <div class="info-footer__item-label">Phone</div>
+                                <div class="info-footer__item-value">
+                                    <a href="tel:+385913228444">+385 91 322 8444</a>
+                                </div>
+                            </div>
+                            <div class="info-footer__item">
+                                <div class="info-footer__item-label">Email</div>
+                                <div class="info-footer__item-value">
+                                    <a href="mailto:prospekt@prospekt.hr">prospekt@prospekt.hr</a>
+                                </div>
+                            </div>
+                            <div class="info-footer__item">
+                                <div class="info-footer__item-label">Address</div>
+                                <div class="info-footer__item-value">Prospekt Ltd<br>Drazice 138, 51 000 Rijeka<br>Croatia</div>
+                            </div>
+                        </div>
+                        <ul class="info-footer__socials">
+                            <li class="info-footer__social">
+                                <a target="_blank" href="#" class="info-footer__social-link">
+                                    <img src="./img/facebook.svg" alt="facebook" class="info-footer__social-icon">
+                                </a>
+                            </li>
+                            <li class="info-footer__social">
+                                <a target="_blank" href="#" class="info-footer__social-link">
+                                    <img src="./img/youtube.svg" alt="youtube" class="info-footer__social-icon">
+                                </a>
+                            </li>
+                            <li class="info-footer__social">
+                                <a target="_blank" href="#" class="info-footer__social-link">
+                                    <img src="./img/whatsapp.svg" alt="whatsapp" class="info-footer__social-icon">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__form form-footer">
+                        <h3 class="form-footer__title">We’d love to hear from you</h3>
+                        <form action="POST" class="form-footer__form">
+                            <div class="form-footer__inputs">
+                                <input type="text" name="name" class="form-footer__input" placeholder="Your Name">
+                                <input type="email" name="email" class="form-footer__input" placeholder="Email">
+                            </div>
+                            <textarea name="message" class="form-footer__message" placeholder="Message" rows="5"></textarea>
+                            <div class="form-footer__checkbox">
+                                <input type="checkbox" name="accept" id="accept" class="form-footer__accept">
+                                <label for="accept" class="form-footer__label">I accept the Terms and conditions</label>
+                            </div>
+                            <input type="submit" value="Send" class="form-footer__submit">
+                        </form>
+                    </div>
+                </div>
+                <div class="footer__top top-footer">
+                    <div class="top-footer__body">
+                        <a href="#" class="top-footer__logo">Luxury Rentals</a>
+                        <div class="top-footer__text">
+                            <p>We ara a lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                    <div class="top-footer__content">
+                        <div class="top-footer__title">Connect with us</div>
+                        <a href="tel:+0000000000" class="top-footer__link top-footer__phone">+00 000 000 00</a>
+                        <a href="mailto:info@luxuryrentals.com" class="top-footer__link">info@luxuryrentals.com</a>
+                        <ul class="top-footer__socials">
+                            <li class="top-footer__social">
+                                <a target="_blank" href="#" class="top-footer__social-link">
+                                    <img src="./img/facebook-icon.svg" alt="facebook-icon" class="top-footer__social-icon">
+                                </a>
+                            </li>
+                            <li class="top-footer__social">
+                                <a target="_blank" href="#" class="top-footer__social-link">
+                                    <img src="./img/youtube-icon.svg" alt="youtube-icon" class="top-footer__social-icon">
+                                </a>
+                            </li>
+                            <li class="top-footer__social">
+                                <a target="_blank" href="#" class="top-footer__social-link">
+                                    <img src="./img/dribbble-icon.svg" alt="dribbble-icon" class="top-footer__social-icon">
+                                </a>
+                            </li>
+                            <li class="top-footer__social">
+                                <a target="_blank" href="#" class="top-footer__social-link">
+                                    <img src="./img/figma-icon.svg" alt="figma-icon" class="top-footer__social-icon">
+                                </a>
+                            </li>
+                            <li class="top-footer__social">
+                                <a target="_blank" href="#" class="top-footer__social-link">
+                                    <img src="./img/whatsapp-icon.svg" alt="whatsapp-icon" class="top-footer__social-icon">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__bottom bottom-footer">
+                    <div class="bottom-footer__links">
+                        <a href="#" class="bottom-footer__link">Terms & Conditions</a>
+                        <a href="#" class="bottom-footer__link">Privacy Notice and Cookies</a>
+                        <a href="#" class="bottom-footer__link">Imprint</a>
+                    </div>
+                    <div class="bottom-footer__copyright">Luxury rentals. | © All rights reserved 2022-2023</div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
